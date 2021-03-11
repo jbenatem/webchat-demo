@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang=en>
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <title>Webchat Demo</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-inner-container">
+                <div class="header-text" style="display: inline-block">Webchat Demo</div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="column" class="main-content-area">
+                <div class="content-title">Arquitectura de la solución</div>                
+            </div>
+        </div>
+        <img src="./resources/arquitectura_demo.png" alt="Arquitectura demo">
+        <div class="chatbot">
+            <div class="chatbutton" id="chatbutton" onclick="generateDirectLineToken()">
+                <img class="imagebutton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Circle-icons-chat.svg/1024px-Circle-icons-chat.svg.png" alt="chatbutton"></img>
+            </div>
+            <div class="chatbox" id="chatbox">
+                <div class="chatheader">
+                    <div class="chatheader-text">
+                        <p class="header-title">Webchat Demo</p>
+                    </div>
+                    <div class="chatheader-hidebutton" onclick="CloseChat()">
+                        <p class="close-button">X</p>
+                    </div>
+                </div>
+                <div class="chatbody" id="chatbody" role="main"> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
